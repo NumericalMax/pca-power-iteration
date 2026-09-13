@@ -2,8 +2,8 @@ from matplotlib import pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import pandas as pd
 
-raw = pd.read_csv("./file.txt").as_matrix()
-pca = pd.read_csv("./output.txt").as_matrix()
+raw = pd.read_csv("./file.txt").to_numpy()
+pca = pd.read_csv("./output.txt").to_numpy()
 
 fig = plt.figure(figsize=(10,5))
 ax = fig.add_subplot(111, projection='3d')
